@@ -18,9 +18,9 @@ public class BadEqualsAndHashCodeExample {
         BadEqualsAndHashCodeExample example = new BadEqualsAndHashCodeExample();
         BadEqualsAndHashCodeExample example22 = new BadEqualsAndHashCodeExample();
 
-        HashMap<Integer, BadEqualsAndHashCodeExample> map = new HashMap<>();
+        HashMap<BadEqualsAndHashCodeExample, Integer> map = new HashMap<>();
         IntStream
                 .range(0,100)
-                .forEach(index -> map.put(index, new BadEqualsAndHashCodeExample()));
+                .forEach(index -> map.put(new BadEqualsAndHashCodeExample(), index));
     }
 }
