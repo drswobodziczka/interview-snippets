@@ -1,3 +1,5 @@
+package com.drswobod.excercices.java;
+
 import java.util.HashMap;
 import java.util.stream.IntStream;
 
