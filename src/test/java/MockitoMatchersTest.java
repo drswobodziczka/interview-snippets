@@ -9,7 +9,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
-class TesteeTest {
+class MockitoMatchersTest {
 
     @Mock
     private Consumer consumer;
