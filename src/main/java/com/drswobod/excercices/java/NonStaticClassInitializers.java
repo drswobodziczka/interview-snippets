@@ -2,7 +2,7 @@ package com.drswobod.excercices.java;
 
 class A {
 
-    public A() {
+    A() {
         System.out.println("constructor com.drswobod.excercices.java.A");
     }
 
@@ -18,7 +18,7 @@ class A {
 
 class B extends A {
 
-    public B() {
+    B() {
         System.out.println("constructor com.drswobod.excercices.java.B");
     }
 
