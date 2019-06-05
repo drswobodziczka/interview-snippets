@@ -27,6 +27,6 @@ class TesteeTest {
 
         testee.dummy(name, age);
 
-        verify(consumer, times(1)).consume(name, eq(age));
+        verify(consumer, times(2)).consume(name, eq(age));
     }
 }
