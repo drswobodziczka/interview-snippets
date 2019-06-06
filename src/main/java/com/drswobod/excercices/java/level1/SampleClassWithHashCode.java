@@ -1,9 +1,9 @@
-package com.drswobod.excercices.java;
+package com.drswobod.excercices.java.level1;
 
 import java.util.HashMap;
 import java.util.stream.IntStream;
 
-public class SampleClasWithHashCode {
+public class SampleClassWithHashCode {
 
     @Override
     public int hashCode() {
@@ -16,9 +16,9 @@ public class SampleClasWithHashCode {
     }
 
     public static void main(String[] args) {
-        HashMap<SampleClasWithHashCode, Integer> map = new HashMap<>();
+        HashMap<SampleClassWithHashCode, Integer> map = new HashMap<>();
         IntStream
                 .range(0,100)
-                .forEach(index -> map.put(new SampleClasWithHashCode(), index));
+                .forEach(index -> map.put(new SampleClassWithHashCode(), index));
     }
 }
