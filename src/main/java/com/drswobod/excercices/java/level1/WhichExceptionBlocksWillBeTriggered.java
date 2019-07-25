@@ -7,6 +7,19 @@ import java.io.IOException;
 public class WhichExceptionBlocksWillBeTriggered {
     public static void main(String[] args) {
         try {
+            throw new Exception();
+        } catch (DatabindingException ex) {
+            System.out.println("DatabindingException");
+        } catch (IOException ex) {
+            System.out.println("IOException");
+        } catch (Exception ex) {
+            System.out.println("Exception");
+        } finally {
+            System.out.println("finally");
+        }
+
+        // wont compile
+        try {
             throw new IOException();
         } catch (DatabindingException ex) {
             System.out.println("DatabindingException");
