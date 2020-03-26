@@ -25,8 +25,8 @@ public class WhichExceptionBlocksWillBeTriggered {
             System.out.println("DatabindingException");
         } catch (Exception ex) {
             System.out.println("Exception");
-        } catch (IOException ex) {
-            System.out.println("IOException");
+//        } catch (IOException ex) {
+//            System.out.println("IOException");
         } finally {
             System.out.println("finally");
         }
